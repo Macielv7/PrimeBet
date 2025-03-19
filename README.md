@@ -14,7 +14,7 @@ Jogos de cassino (slots, roleta, blackjack, etc.).
 
 Suporte ao cliente via chat.
 
-# Requisitos Funcionais
+# Funcionais
 
 Login:
 
