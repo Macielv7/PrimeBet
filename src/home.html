@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -25,14 +26,15 @@
         <form>
             <div class="input-group">
                 <label for="usu">Usuario</label>
-                <input type="text" id="txtUsu" name="txtUsu" placeholder="Digite o usuario" required>
+                <input type="text" id="usuario" name="usuario" placeholder="Digite o usuario" required>
             </div>
             <div class="input-group">
                 <label for="usu">Senha</label>
-                <input type="password" id="txtSenha" name="txtSenha" placeholder="Digite a senha" required>
+                <input type="password" id="senha" name="senha" placeholder="Digite a senha" required>
             </div>
 
-            <button class="btnl" type="submit"> Entrar </button>
+            <button class="btnl" type="submit" value=" onclick="validar() > Entrar </button>
+            
             <p>Cadastre-se agora</p>
         </form>
     </div>
