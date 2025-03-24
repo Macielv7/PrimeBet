@@ -6,87 +6,213 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+    background-color: #06001A;
 }
 
-/* Menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #130E25;
+    padding: 15px 40px;
+    color: white;
+}
 
-nav {
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu a:hover {
+    text-decoration: underline;
+    color: #1BB96C;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .actions .cadastro {
+    background-color: #1BB96C;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+}
+
+.navbar .actions .login {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #95272700;
+}
+
+/* Container1 */
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 70px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.container h1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    font-size: 30px;
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.create-account button {
+    background-color: #1BB96C;
+    color: #06001A;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.create-account button:hover {
+    background-color: #130E25;
+    color: #1BB96C;
+}
+
+/* Container2 */
+
+.container2 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: #5937E0;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    padding: 5px 30px;
+    justify-content: center;
+    padding: 0px 70px;
+    border-radius: 8px;
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-nav .logo {
-    color: #ffffff;
-    font-size: 2rem;
-}
-
-nav ul li {
-    display: inline-block;
-    position: relative;
-    margin: 0 0px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-
-.btn {
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    color: #5937E0;
-    border: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    font-size: 20px;
-}
-
-nav .btn {
-    margin-top: 0;
-}
-
-/* Login */
-
-
-.login-container {
-    background-color: #5937E0;
-    width: 350px;
-    margin: 150px auto;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left;
-}
-
-.login-container h2 {
+.a {
     text-align: center;
+    background-color: #130E25;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container2 .a h1 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.match-info {
+    font-size: 18px;
     margin-bottom: 20px;
     color: #ffffff;
 }
 
-.input-group {
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    display: block;
+.teams {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    gap: 40px;
     color: #ffffff;
 }
 
-.input-group input {
+.time {
+    background-color: #06001A;
+    border-radius: 50px;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time img {
+    width: 45%;
+}
+
+.odds {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.odds span {
+    background-color: #2A253B;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Login */
+
+
+form {
+    background-color: #130E25;
+    width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form p:hover {
+    color: #1BB96C;
+}
+
+input,
+select {
     width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -94,8 +220,8 @@ nav .btn {
 .btnl {
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: #ffffff;
-    color: #5937E0;
+    background-color: #1BB96C;
+    color: #06001A;
     border: 5px;
     width: 100%;
     cursor: pointer;
@@ -104,13 +230,8 @@ nav .btn {
     margin-bottom: 10px;
 }
 
-p{
-    color: #ffffff;
-    cursor: pointer;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-p:hover{
-    color: aquamarine;
+.btnl:hover {
+    background-color: #06001A;
+    color: #1BB96C;
+    transition: all 0.5s;
 }
