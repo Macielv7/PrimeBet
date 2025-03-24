@@ -23,20 +23,27 @@
 
     <div class="login-container">
         <form>
-            <h2>Faça o seu Login</h2>
-            <p>Preencha os campos para podermos realizar o login</p>
+            <h2>Faça o seu Cadastro</h2>
+            <p>Preencha os campos para podermos realizar o cadastro</p>
 
             <label>Usuario</label>
             <input type="text" placeholder="Usuario" id="Usuario" required>
 
+            <label>Email</label>
+            <input type="text" placeholder="Email" id="Email" required>
+
+            <label>Data de nacimento</label>
+            <input type="date" placeholder="Data de nacimento" id="txtdtNascimento" required>
+
+            <label>CPF</label>
+            <input type="text" placeholder="CPF" id="CPF" required>
+
             <label>Senha</label>
             <input type="password" placeholder="Senha" id="Senha" required>
 
-            <button class="btnl" type="submit" onclick="verificarLogin()"> Entrar </button>
-
+            <button class="btnl" onclick="cadastrar()" type="submit"> Entrar </button>
             <p id="mensagemErro"></p>
-
-            <a href="./cadastro.html"><p>Cadastre-se agora</p></a>
+            <a href="./login.html"><p>Faça o seu login agora</p></a>
         </form>
     </div>
 </body>
