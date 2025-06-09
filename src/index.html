@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container-layout">
+        <header class="cabecalho">
+            <div class="logo">
+                <a href="home.html"><h1 >PRIMEBET</h1></a>
+            </div>
+
+            <div class="barra-pesquisa">
+                <input type="text" placeholder="Pesquisar...">
+                <i class="fas fa-search"></i>
+            </div>
+        </header>
+
+        <aside class="barra-lateral">
+            <div class="icone-trofeu">
+                <h1>PRIMEBET</h1>
+            </div>
+            <div class="secao-barra-lateral">
+                <h3><i class="fas fa-futbol"></i> Esportes</h3>
+                <ul>
+                    <li><a href="#" class="ativo">Futebol</a></li>
+                    <li><a href="#">Tênis de Mesa</a></li>
+                    <li><a href="#">Voleibol</a></li>
+                    <li><a href="#">Basquetebol</a></li>
+                    <li><a href="#">Futebol Americano</a></li>
+                    <li><a href="#">Hóquei no Gelo</a></li>
+                    <li><a href="#">Handebol</a></li>
+                    <li><a href="#">Críquete</a></li>
+                    <li><a href="#">Hóquei em Campo</a></li>
+                    <li><a href="#">Dardos</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="conteudo-principal">
+            <section class="jogos-em-destaque">
+                <h2 class="titulo-secao">Apostas ao Vivo</h2>
+                <div class="grid-destaques">
+                    <div class="cartao-jogo destaque" data-match-id="match1">
+                        <div class="cabecalho-jogo">
+                            <span class="liga">Premier League</span>
+                            <span class="tempo-jogo">1:2</span>
+                        </div>
+                        <div class="times">
+                            <span class="nome-time">Chelsea</span>
+                            <span class="vs">vs</span>
+                            <span class="nome-time">Leicester C</span>
+                        </div>
+                        <div class="cotas">
+                            <button data-odd="1.8" data-team="Chelsea" data-match="Chelsea vs Leicester C">1.8</button>
+                            <button data-odd="2.1" data-team="Draw" data-match="Chelsea vs Leicester C">2.1</button>
+                            <button data-odd="1.3" data-team="Leicester C" data-match="Chelsea vs Leicester C">1.3</button>
+                        </div>
+                    </div>
+                    <div class="cartao-jogo destaque" data-match-id="match2">
+                        <div class="cabecalho-jogo">
+                            <span class="liga">Premier League</span>
+                            <span class="tempo-jogo">1:2</span>
+                        </div>
+                        <div class="times">
+                            <span class="nome-time">Arsenal</span>
+                            <span class="vs">vs</span>
+                            <span class="nome-time">Man Utd</span>
+                        </div>
+                        <div class="cotas">
+                            <button data-odd="2.0" data-team="Arsenal" data-match="Arsenal vs Man Utd">2.0</button>
+                            <button data-odd="3.0" data-team="Draw" data-match="Arsenal vs Man Utd">3.0</button>
+                            <button data-odd="1.5" data-team="Man Utd" data-match="Arsenal vs Man Utd">1.5</button>
+                        </div>
+                    </div>
+                    <div class="cartao-jogo destaque" data-match-id="match3">
+                        <div class="cabecalho-jogo">
+                            <span class="liga">Premier League</span>
+                            <span class="tempo-jogo">1:2</span>
+                        </div>
+                        <div class="times">
+                            <span class="nome-time">Liverpool</span>
+                            <span class="vs">vs</span>
+                            <span class="nome-time">Man City</span>
+                        </div>
+                        <div class="cotas">
+                            <button data-odd="2.2" data-team="Liverpool" data-match="Liverpool vs Man City">2.2</button>
+                            <button data-odd="3.2" data-team="Draw" data-match="Liverpool vs Man City">3.2</button>
+                            <button data-odd="1.7" data-team="Man City" data-match="Liverpool vs Man City">1.7</button>
+                        </div>
+                    </div>
+                    <div class="cartao-jogo destaque" data-match-id="match4">
+                        <div class="cabecalho-jogo">
+                            <span class="liga">Premier League</span>
+                            <span class="tempo-jogo">1:2</span>
+                        </div>
+                        <div class="times">
+                            <span class="nome-time">Tottenham</span>
+                            <span class="vs">vs</span>
+                            <span class="nome-time">West Ham</span>
+                        </div>
+                        <div class="cotas">
+                            <button data-odd="1.9" data-team="Tottenham" data-match="Tottenham vs West Ham">1.9</button>
+                            <button data-odd="2.8" data-team="Draw" data-match="Tottenham vs West Ham">2.8</button>
+                            <button data-odd="1.6" data-team="West Ham" data-match="Tottenham vs West Ham">1.6</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="jogos-futebol">
+                <h2 class="titulo-secao">Futebol <button class="btn btn-ver-todos">Todos os eventos</button></h2>
+                <div class="grid-futebol">
+                    <div class="cartao-jogo" data-match-id="soccer1">
+                        <div class="cabecalho-jogo">
+                            <span class="liga">Poland. Ekstraklasa</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="times">
+                            <span class="nome-time">Rakow Czestochowa</span>
+                            <span class="nome-time">Cracovia Krakow</span>
+                        </div>
+                        <div class="placar">
+                            <span>1</span>
+                            <span>0</span>
+                        </div>
+                        <div class="detalhes-jogo">
+                            <div class="linha-cotas">
+                                <button data-odd="3.24" data-team="Rakow Czestochowa" data-match="Rakow vs Cracovia">3.24</button>
+                                <button data-odd="4.42" data-team="Draw" data-match="Rakow vs Cracovia">4.42</button>
+                                <button data-odd="2.02" data-team="Cracovia Krakow" data-match="Rakow vs Cracovia">2.02</button>
+                            </div>
+                            <div class="handicap">
+                                <span class="h-texto">H:</span>
+                                <span class="h-valor">1</span>
+                                <span class="h-valor">0</span>
+                                <span class="h-valor">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartao-jogo" data-match-id="soccer2">
+                        <div class="cabecalho-jogo">
+                            <span class="liga">Norway. Division 1</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="times">
+                            <span class="nome-time">Valerenga</span>
+                            <span class="nome-time">Ranheim TF</span>
+                        </div>
+                        <div class="placar">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="detalhes-jogo">
+                            <div class="linha-cotas">
+                                <button data-odd="3.24" data-team="Valerenga" data-match="Valerenga vs Ranheim">3.24</button>
+                                <button data-odd="4.42" data-team="Draw" data-match="Valerenga vs Ranheim">4.42</button>
+                                <button data-odd="2.02" data-team="Ranheim TF" data-match="Valerenga vs Ranheim">2.02</button>
+                            </div>
+                            <div class="handicap">
+                                <span class="h-texto">H:</span>
+                                <span class="h-valor">0</span>
+                                <span class="h-valor">1</span>
+                                <span class="h-valor">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartao-jogo" data-match-id="soccer3">
+                        <div class="cabecalho-jogo">
+                            <span class="liga">Bulgaria. Parva Liga</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="times">
+                            <span class="nome-time">PFC Cherno More</span>
+                            <span class="nome-time">FK Septemvri Sofia</span>
+                        </div>
+                        <div class="placar">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="detalhes-jogo">
+                            <div class="linha-cotas">
+                                <button data-odd="3.24" data-team="PFC Cherno More" data-match="Cherno More vs Septemvri">3.24</button>
+                                <button data-odd="4.42" data-team="Draw" data-match="Cherno More vs Septemvri">4.42</button>
+                                <button data-odd="2.02" data-team="FK Septemvri Sofia" data-match="Cherno More vs Septemvri">2.02</button>
+                            </div>
+                            <div class="handicap">
+                                <span class="h-texto">H:</span>
+                                <span class="h-valor">0</span>
+                                <span class="h-valor">0</span>
+                                <span class="h-valor">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartao-jogo" data-match-id="soccer4">
+                        <div class="cabecalho-jogo">
+                            <span class="liga">Denmark. Superliga</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="times">
+                            <span class="nome-time">Odense BK</span>
+                            <span class="nome-time">FC Copenhagen</span>
+                        </div>
+                        <div class="placar">
+                            <span>0</span>
+                            <span>1</span>
+                        </div>
+                        <div class="detalhes-jogo">
+                            <div class="linha-cotas">
+                                <button data-odd="3.24" data-team="Odense BK" data-match="Odense vs Copenhagen">3.24</button>
+                                <button data-odd="4.42" data-team="Draw" data-match="Odense vs Copenhagen">4.42</button>
+                                <button data-odd="2.02" data-team="FC Copenhagen" data-match="Odense vs Copenhagen">2.02</button>
+                            </div>
+                            <div class="handicap">
+                                <span class="h-texto">H:</span>
+                                <span class="h-valor">0</span>
+                                <span class="h-valor">0</span>
+                                <span class="h-valor">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartao-jogo" data-match-id="soccer5">
+                        <div class="cabecalho-jogo">
+                            <span class="liga">Argentina. Liga Profesional</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="times">
+                            <span class="nome-time">Defensa y Justicia</span>
+                            <span class="nome-time">CA Platense</span>
+                        </div>
+                        <div class="placar">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="detalhes-jogo">
+                            <div class="linha-cotas">
+                                <button data-odd="3.24" data-team="Defensa y Justicia" data-match="Defensa vs Platense">3.24</button>
+                                <button data-odd="4.42" data-team="Draw" data-match="Defensa vs Platense">4.42</button>
+                                <button data-odd="2.02" data-team="CA Platense" data-match="Defensa vs Platense">2.02</button>
+                            </div>
+                            <div class="handicap">
+                                <span class="h-texto">H:</span>
+                                <span class="h-valor">0</span>
+                                <span class="h-valor">0</span>
+                                <span class="h-valor">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartao-jogo" data-match-id="soccer6">
+                        <div class="cabecalho-jogo">
+                            <span class="liga">TOP Club Friendly Games</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="times">
+                            <span class="nome-time">FC Barcelona</span>
+                            <span class="nome-time">Manchester City</span>
+                        </div>
+                        <div class="placar">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="detalhes-jogo">
+                            <div class="linha-cotas">
+                                <button data-odd="3.24" data-team="FC Barcelona" data-match="Barcelona vs Man City">3.24</button>
+                                <button data-odd="4.42" data-team="Draw" data-match="Barcelona vs Man City">4.42</button>
+                                <button data-odd="2.02" data-team="Manchester City" data-match="Barcelona vs Man City">2.02</button>
+                            </div>
+                            <div class="handicap">
+                                <span class="h-texto">H:</span>
+                                <span class="h-valor">0</span>
+                                <span class="h-valor">0</span>
+                                <span class="h-valor">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="bilhete-aposta">
+            <div class="cabecalho-bilhete">
+                <h3>Bilhete</h3>
+            </div>
+            <div class="conteudo-bilhete" id="betslipContent">
+            </div>
+            <div class="cotas-totais">
+                <span>Cotas Totais</span>
+                <span class="valor" id="totalOddsValue">0.00</span>
+            </div>
+            <div class="entrada-aposta">
+                <input type="number" placeholder="Valor da Aposta" id="stakeInput" value="10" min="0.01" step="0.01">
+                <div class="apostas-rapidas">
+                    <button data-stake="10">10</button>
+                    <button data-stake="50">50</button>
+                    <button data-stake="100">100</button>
+                </div>
+            </div>
+            <button class="btn btn-apostar" id="placeBetBtn">Apostar</button>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
